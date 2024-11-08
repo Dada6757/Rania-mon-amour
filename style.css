@@ -1,0 +1,49 @@
+/* Centrage du contenu sur la page */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdf3e7;
+    overflow: hidden;
+}
+
+/* Style de l'enveloppe */
+.envelope {
+    position: relative;
+    width: 300px; /* Taille de l'enveloppe */
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Volet de l'enveloppe */
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #e3c4a8; /* Couleur du volet */
+    transform-origin: top;
+    animation: openEnvelope 2s ease forwards; /* Animation */
+}
+
+/* Contenu de la lettre */
+.letter {
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    opacity: 0; /* Invisible au début */
+    animation: revealLetter 2s ease forwards 2s; /* Animation pour faire apparaître le contenu */
+}
+
+/* Animation pour ouvrir l'enveloppe */
+@keyframes openEnvelope {
+    from { transform: scaleY(1); } /* Pleine hauteur */
+    to { transform: scaleY(0); } /* Hauteur zéro */
+}
+
+/* Animation pour faire apparaître la lettre */
+@keyframes revealLetter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
