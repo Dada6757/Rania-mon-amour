@@ -1,8 +1,0 @@
-<div class="envelope">
-    <div class="cover"></div> <!-- Partie de l'enveloppe qui va se lever -->
-    <div class="letter">
-        <!-- Ton texte existant ici -->
-        <h1>À toi, mon amour</h1>
-        <p>Mon cœur, cette lettre est pour toi...</p>
-    </div>
-</div>
