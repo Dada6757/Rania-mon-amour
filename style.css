@@ -22,10 +22,11 @@ body, html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #e3c4a8;
+    background: #ffffff; /* Blanc pour l'enveloppe avant ouverture */
     transform-origin: bottom;
     animation: openEnvelope 2s ease forwards 0.5s;
 }
+
 
 /* Contenu de la lettre */
 .letter {
