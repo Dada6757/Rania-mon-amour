@@ -23,8 +23,8 @@ body, html {
     width: 100%;
     height: 100%;
     background: #e3c4a8; /* Couleur du volet */
-    transform-origin: top;
-    animation: openEnvelope 2s ease forwards; /* Animation */
+    transform-origin: bottom; /* Origine en bas pour l'effet d'ouverture */
+    animation: openEnvelope 2s ease forwards 0.5s; /* Animation avec délai */
 }
 
 /* Contenu de la lettre */
@@ -33,13 +33,13 @@ body, html {
     background: #fff;
     text-align: center;
     opacity: 0; /* Invisible au début */
-    animation: revealLetter 2s ease forwards 2s; /* Animation pour faire apparaître le contenu */
+    animation: revealLetter 2s ease forwards 2.5s; /* Animation pour faire apparaître le contenu après l'ouverture */
 }
 
 /* Animation pour ouvrir l'enveloppe */
 @keyframes openEnvelope {
-    from { transform: scaleY(1); } /* Pleine hauteur */
-    to { transform: scaleY(0); } /* Hauteur zéro */
+    from { transform: rotateX(0deg); } /* Pleine hauteur */
+    to { transform: rotateX(-90deg); } /* Ouverture */
 }
 
 /* Animation pour faire apparaître la lettre */
