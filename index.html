@@ -12,9 +12,80 @@
         <div class="letter">
             <h1>À toi, mon amour</h1>
             <p>Mon cœur, cette lettre est pour toi...</p>
-            <button class="btn" id="openThis">Ouvre cela</button>
-            <button class="btn" id="smallGift">Un petit cadeau</button>
+            <button class="btn" id="openThis" onclick="showHeartPage()">Ouvre cela</button>
+            <button class="btn" id="smallGift" onclick="showHeartPage()">Un petit cadeau</button>
         </div>
     </div>
+
+    <!-- Code JavaScript pour ouvrir la nouvelle page et afficher le cœur -->
+    <script>
+    function showHeartPage() {
+        // Créer une nouvelle page vierge
+        const newWindow = window.open("", "_blank", "width=400,height=400");
+
+        // Ajouter le code HTML et CSS pour le cœur dans la nouvelle fenêtre
+        newWindow.document.write(`
+            <html>
+            <head>
+                <style>
+                    /* Fond de la nouvelle page */
+                    body {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                        background-color: #ffe6f2;
+                        overflow: hidden;
+                    }
+
+                    /* Style du cœur */
+                    .heart {
+                        position: relative;
+                        width: 100px;
+                        height: 90px;
+                        background-color: #ff69b4;
+                        transform: rotate(-45deg);
+                        animation: drawHeart 3s ease forwards;
+                    }
+
+                    .heart::before,
+                    .heart::after {
+                        content: "";
+                        position: absolute;
+                        width: 100px;
+                        height: 100px;
+                        background-color: #ff69b4;
+                        border-radius: 50%;
+                    }
+
+                    .heart::before {
+                        top: -50px;
+                        left: 0;
+                    }
+
+                    .heart::after {
+                        top: 0;
+                        left: 50px;
+                    }
+
+                    /* Animation pour dessiner le cœur progressivement */
+                    @keyframes drawHeart {
+                        from {
+                            transform: scale(0);
+                        }
+                        to {
+                            transform: scale(1);
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="heart"></div>
+            </body>
+            </html>
+        `);
+    }
+    </script>
 </body>
 </html>
