@@ -17,11 +17,10 @@
         </div>
     </div>
 
-  <script>
+ <script>
 function showHeartPage() {
-    // Ouvre la page dans un nouvel onglet
-    window.open("page-coeur.html", "_blank");
-}
+    // Ouvre une nouvelle page avec des styles plus épurés et sobres
+    const newWindow = window.open("", "_blank");
 
     newWindow.document.write(`
         <html>
@@ -35,9 +34,9 @@ function showHeartPage() {
                     align-items: center;
                     height: 100vh;
                     margin: 0;
-                    background-color: #ffe6f2;
+                    background-color: #f8f4f0;
                     overflow: hidden;
-                    font-family: 'Georgia', serif; /* Police élégante */
+                    font-family: 'Times New Roman', serif; /* Police élégante et sobre */
                 }
 
                 /* Style du cœur */
@@ -45,7 +44,7 @@ function showHeartPage() {
                     position: relative;
                     width: 100px;
                     height: 90px;
-                    background-color: #ff69b4;
+                    background-color: #b23a48; /* Rouge bordeaux pour une touche romantique et sobre */
                     animation: drawHeart 3s ease forwards;
                 }
 
@@ -55,7 +54,7 @@ function showHeartPage() {
                     position: absolute;
                     width: 100px;
                     height: 100px;
-                    background-color: #ff69b4;
+                    background-color: #b23a48;
                     border-radius: 50%;
                 }
 
@@ -83,11 +82,11 @@ function showHeartPage() {
                 .poem {
                     margin-top: 20px;
                     font-size: 18px;
-                    color: #d46a92; /* Couleur romantique */
+                    color: #6e2f3a; /* Ton bordeaux plus doux et sobre */
                     text-align: center;
                     max-width: 80%;
                     font-style: italic;
-                    font-family: 'Brush Script MT', cursive;
+                    font-family: 'Cormorant Garamond', serif; /* Police épurée */
                 }
 
                 /* Style des boutons avec effet de survol */
@@ -97,7 +96,7 @@ function showHeartPage() {
                     padding: 10px 20px;
                     font-size: 16px;
                     color: #fff;
-                    background-color: #ff69b4;
+                    background-color: #6e2f3a;
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
@@ -106,7 +105,7 @@ function showHeartPage() {
                 }
 
                 .btn:hover {
-                    background-color: #ff1493; /* Changement de couleur au survol */
+                    background-color: #3e1f25; /* Couleur plus foncée au survol */
                 }
             </style>
         </head>
