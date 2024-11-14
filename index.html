@@ -17,12 +17,10 @@
         </div>
     </div>
 
-   <script>
+  <script>
 function showHeartPage() {
-    // Créer une nouvelle page vierge
     const newWindow = window.open("", "_blank", "width=400,height=600");
 
-    // Ajouter le code HTML et CSS pour le cœur, le texte poétique, et le bouton dans la nouvelle fenêtre
     newWindow.document.write(`
         <html>
         <head>
@@ -37,7 +35,7 @@ function showHeartPage() {
                     margin: 0;
                     background-color: #ffe6f2;
                     overflow: hidden;
-                    font-family: Arial, sans-serif;
+                    font-family: 'Georgia', serif; /* Police élégante */
                 }
 
                 /* Style du cœur */
@@ -83,12 +81,14 @@ function showHeartPage() {
                 .poem {
                     margin-top: 20px;
                     font-size: 18px;
-                    color: #ff69b4;
+                    color: #d46a92; /* Couleur romantique */
                     text-align: center;
                     max-width: 80%;
+                    font-style: italic;
+                    font-family: 'Brush Script MT', cursive;
                 }
 
-                /* Style du bouton */
+                /* Style des boutons avec effet de survol */
                 .btn {
                     display: inline-block;
                     margin-top: 20px;
@@ -99,24 +99,27 @@ function showHeartPage() {
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
-                    transition: background-color 0.3s ease;
                     text-decoration: none;
+                    transition: background-color 0.3s ease;
                 }
 
                 .btn:hover {
-                    background-color: #ff1493;
+                    background-color: #ff1493; /* Changement de couleur au survol */
                 }
             </style>
         </head>
         <body>
             <div class="heart"></div>
-            <div class="poem">"Ton sourire est un soleil qui réchauffe mon âme,<br>
-            Ta voix, une mélodie qui apaise mon cœur,<br>
-            Et chaque moment passé à tes côtés est un trésor inestimable.<br>
-            Je t'aime plus que les mots ne pourront jamais le dire."</div>
+            <div class="poem">
+                "Ton sourire est un soleil qui réchauffe mon âme,<br>
+                Ta voix, une mélodie qui apaise mon cœur,<br>
+                Et chaque moment passé à tes côtés est un trésor inestimable.<br>
+                Je t'aime plus que les mots ne pourront jamais le dire."
+            </div>
             <a href="poems.html" class="btn">Voir tous mes poèmes</a>
         </body>
         </html>
     `);
 }
 </script>
+
