@@ -17,16 +17,20 @@
         </div>
     </div>
 
- <script>
-function showHeartPage() {
-    // Ouvre une nouvelle page avec des styles plus épurés et sobres
-    const newWindow = window.open("", "_blank");
+    <script>
+    function showHeartPage() {
+        // Ouvre une nouvelle page ergonomique et sobre
+        const newWindow = window.open("", "_blank");
 
-    newWindow.document.write(`
-        <html>
+        newWindow.document.write(`
+        <!DOCTYPE html>
+        <html lang="fr">
         <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mon amour</title>
             <style>
-                /* Fond de la nouvelle page */
+                /* Style général de la page */
                 body {
                     display: flex;
                     flex-direction: column;
@@ -34,85 +38,75 @@ function showHeartPage() {
                     align-items: center;
                     height: 100vh;
                     margin: 0;
-                    background-color: #f8f4f0;
+                    background-color: #fdf6e3; /* Beige doux et romantique */
                     overflow: hidden;
-                    font-family: 'Times New Roman', serif; /* Police élégante et sobre */
+                    font-family: 'Georgia', serif; /* Police élégante */
                 }
 
-                /* Style du cœur */
+                /* Cœur stylisé */
                 .heart {
                     position: relative;
-                    width: 100px;
-                    height: 90px;
-                    background-color: #b23a48; /* Rouge bordeaux pour une touche romantique et sobre */
-                    animation: drawHeart 3s ease forwards;
+                    width: 150px;
+                    height: 150px;
+                    background-color: #e63946; /* Rouge passion mais sobre */
+                    margin-bottom: 20px;
+                    transform: rotate(45deg); /* Symétrie corrigée */
                 }
 
-                .heart::before,
-                .heart::after {
+                .heart:before,
+                .heart:after {
                     content: "";
                     position: absolute;
-                    width: 100px;
-                    height: 100px;
-                    background-color: #b23a48;
+                    width: 150px;
+                    height: 150px;
+                    background-color: #e63946;
                     border-radius: 50%;
                 }
 
-                .heart::before {
-                    top: -50px;
+                .heart:before {
+                    top: -75px;
                     left: 0;
                 }
 
-                .heart::after {
+                .heart:after {
+                    left: 75px;
                     top: 0;
-                    left: 50px;
                 }
 
-                /* Animation pour dessiner le cœur progressivement */
-                @keyframes drawHeart {
-                    from {
-                        transform: scale(0);
-                    }
-                    to {
-                        transform: scale(1);
-                    }
-                }
-
-                /* Style du texte poétique */
+                /* Texte poétique */
                 .poem {
-                    margin-top: 20px;
                     font-size: 18px;
-                    color: #6e2f3a; /* Ton bordeaux plus doux et sobre */
+                    color: #2c3e50; /* Bleu-gris sobre */
                     text-align: center;
-                    max-width: 80%;
-                    font-style: italic;
-                    font-family: 'Cormorant Garamond', serif; /* Police épurée */
+                    margin: 20px;
+                    line-height: 1.6;
                 }
 
-                /* Style des boutons avec effet de survol */
+                /* Bouton avec hover */
                 .btn {
                     display: inline-block;
                     margin-top: 20px;
                     padding: 10px 20px;
                     font-size: 16px;
                     color: #fff;
-                    background-color: #6e2f3a;
+                    background-color: #457b9d; /* Bleu doux */
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
                     text-decoration: none;
+                    font-weight: bold;
                     transition: background-color 0.3s ease;
                 }
 
                 .btn:hover {
-                    background-color: #3e1f25; /* Couleur plus foncée au survol */
+                    background-color: #1d3557; /* Couleur plus foncée au survol */
                 }
             </style>
         </head>
         <body>
             <div class="heart"></div>
             <div class="poem">
-            Après quelques semaines de travail, je suis heureux de te présenter le fruit de mes efforts. J'ai appris de zéro à coder un site internet afin de te faire plaisir et référencer tout les poèmes que je t'ai écrit et ceux que je t'écrirais. <br>
+                Après quelques semaines de travail, je suis heureux de te présenter le fruit de mes efforts. J'ai appris de zéro à coder un site internet afin de te faire plaisir et référencer tout les poèmes que je t'ai écrit et ceux que je t'écrirais. <br>
             Je parle au futur car notre histoire est loin d'être finie ni même réellement commencée. Elle a connu un petit arrêt afin qu'elle puisse mieux commencer. Quand on sera mariés إِنْ شَاءَ ٱللَّٰهُ tu verras tout l'amour, les petites et grandes attentions que j'ai prévues pour toi. Toutes les recherches, les préparations de plans ou de vacances à deux que j'ai rêvées et organisées dans ma tête … Bref, tu verras combien je t'ai portée dans mon cœur, dans mon âme et jusqu'à dans ma chair tout ces mois et toutes ces années. Et j'espère que tu te diras que ça valait le coup de m'avoir laissée la chance d'espérer t'avoir à mes côtés. <br>
             J'aimerais finir ce texte en te réitérant mon amour sans faille que je te porte, un amour si profond que je le vois manifesté partout dans la vie … <br>
             Chaque fleur qui pousse m'évoque les sentiments grandissants dans mon cœur. Les étoiles scintillantes constituent des phares pour les hommes dans la nuit, tout comme ton souvenir rappelle à mon âme que l'homme n'a pas été crée seul : <br>
@@ -121,11 +115,15 @@ function showHeartPage() {
             (Al A'raf, verset 189). <br>
             Je vois en toi une femme, une épouse et si Dieu le veut, la future mère de mes enfants. Mais je veux aussi rendre hommage à l'enfant que tu as été. J'aimerais la couvrir d'amour et lui témoigner de la considération. J'en prendrai soin, c'est une promesse, et je te ferais vivre dans une paix qui te siéra parfaitement je l'espère. <br>
             Je t'aime Rania <3 </strong>
+
             </div>
             <a href="poems.html" class="btn">Voir mes poèmes dédiés à toi</a>
         </body>
         </html>
-    `);
-}
-</script>
+        `);
+    }
+    </script>
+</body>
+</html>
+
 
