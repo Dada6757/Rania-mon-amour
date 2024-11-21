@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poème 1</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers ton fichier CSS global -->
+    <style>
+        /* Styles spécifiques pour les pages de poèmes */
+        body {
+            background-color: #f5f5f5; /* Fond clair agréable */
+            color: #333; /* Couleur du texte pour un bon contraste */
+            font-family: 'Georgia', serif; /* Police élégante et adaptée à un poème */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-weight: bold; /* Titre en gras */
+            margin-bottom: 20px; /* Espacement entre le titre et le texte */
+        }
+
+        p {
+            font-style: italic; /* Texte du poème en italique */
+            line-height: 1.6; /* Espacement des lignes pour améliorer la lisibilité */
+            text-align: center;
+            margin: 0 20px 30px; /* Marges latérales pour éviter les bords serrés */
+        }
+
+        a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff69b4
+            color: #fff; /* Texte blanc */
+            text-decoration: none; /* Supprime le soulignement */
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Animation pour le survol */
+        }
+
+        a.btn:hover {
+            background-color: #555; /* Couleur légèrement plus claire au survol */
+        }
+    </style>
+</head>
+<body>
+    <h1>Aldébaran</h1> <!-- Titre du poème -->
+    <p> Au premier abord je t'ai d'abord trouvée surprenante <br>
+    Je remarqua rapidement combien tu étais charmante <br>
+    Dans le flottement des astres tu es l'étoile irradiante <br>
+    Dans mon cœur et mon âme tu es une princesse savante <br>
+    Une douceur calmante et une beauté immanente <br>
+    Tu es stellaire ô Aîmée et chaque jour tu es épatante <br>
+    Car comme Aldébaran tu es flamboyante <br> <br>
+    
+    Les yeux troubles je revois ton visage et je repense à l'étoile ardente <br>
+    Elle brûle mais elle ne consumera jamais mon cœur qui se lamente <br>
+    Rania pardonne mes erreurs et sois patiente <br>
+    Pardonne au poète car il te fait une promesse engageante <br>
+    La promesse d'un amour des âmes duquel découlera une poésie exaltante
+    </p>
+    <a href="poems.html" class="btn">Retour au sommaire</a> <!-- Bouton de retour -->
+</body>
+</html>
