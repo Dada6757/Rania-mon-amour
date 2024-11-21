@@ -16,7 +16,6 @@
             <button class="btn" id="smallGift" onclick="showHeartPage()">Un petit cadeau</button>
         </div>
     </div>
-
     <script>
 function showHeartPage() {
     const newWindow = window.open("", "_blank");
@@ -39,13 +38,14 @@ function showHeartPage() {
                     margin: 0;
                     background-color: #fef6f9; /* Rose pâle */
                     font-family: 'Georgia', serif;
+                    text-align: center;
                 }
 
                 /* Style du cœur */
                 .heart {
                     position: relative;
-                    width: 120px;
-                    height: 120px;
+                    width: 80px; /* Taille réduite */
+                    height: 80px;
                     background-color: #e63946; /* Rouge passion */
                     margin-bottom: 20px;
                     transform: rotate(0); /* Cœur bien droit */
@@ -55,39 +55,38 @@ function showHeartPage() {
                 .heart::after {
                     content: "";
                     position: absolute;
-                    width: 120px;
-                    height: 120px;
+                    width: 80px;
+                    height: 80px;
                     background-color: #e63946;
                     border-radius: 50%;
                 }
 
                 .heart::before {
-                    top: -60px;
+                    top: -40px;
                     left: 0;
                 }
 
                 .heart::after {
-                    left: 60px;
                     top: 0;
+                    left: 40px;
                 }
 
                 /* Style du texte */
                 .poem {
-                    font-size: 16px; /* Texte plus petit */
-                    color: #2c3e50; /* Bleu-gris */
-                    text-align: left;
-                    margin: 10px 20px;
-                    line-height: 1.8; /* Espacement entre les lignes */
+                    font-size: 16px;
+                    color: #2c3e50; /* Bleu-gris élégant */
+                    margin: 0 20px;
+                    line-height: 1.8;
                 }
 
                 /* Style du bouton */
                 .btn {
                     display: inline-block;
-                    margin-top: 10px; /* Plus près du texte */
+                    margin-top: 20px;
                     padding: 10px 20px;
                     font-size: 14px;
                     color: #fff;
-                    background-color: #e91e63; /* Rose élégant */
+                    background-color: #e91e63; /* Rose uniforme */
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
@@ -112,8 +111,7 @@ function showHeartPage() {
             <em>" C'est Lui qui vous a créés d'une personne unique et Il a tiré de celle-ci son épouse pour qu'il trouve le repos en elle "<em> <br>
             (Al A'raf, verset 189). <br>
             Je vois en toi une femme, une épouse et si Dieu le veut, la future mère de mes enfants. Mais je veux aussi rendre hommage à l'enfant que tu as été. J'aimerais la couvrir d'amour et lui témoigner de la considération. J'en prendrai soin, c'est une promesse, et je te ferais vivre dans une paix qui te siéra parfaitement je l'espère. <br>
-            <strong>Je t'aime Rania <3 </strong>
-
+            <strong>Je t'aime Rania <3 </strong> 
             </div>
             <a href="poems.html" class="btn">Voir mes poèmes dédiés à toi</a>
         </body>
@@ -121,3 +119,5 @@ function showHeartPage() {
     `);
 }
 </script>
+
+   
