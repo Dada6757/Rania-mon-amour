@@ -143,7 +143,7 @@ h1 {
 }
 
 .poem-list {
-    max-height: 300px; /* Ajuste cette valeur selon la hauteur souhaitée */
+    max-height: 600px; /* Ajuste cette valeur selon la hauteur souhaitée */
     overflow-y: auto; /* Active le défilement vertical si le contenu dépasse */
     border: 1px solid #ddd; /* Optionnel : pour visualiser les limites du conteneur */
     padding: 10px; /* Optionnel : ajoute un peu d’espace intérieur */
