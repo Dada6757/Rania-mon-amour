@@ -3,49 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Poèmes</title>
-    <style>
-        /* Style de base de la page */
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #ffe6f2;
-            color: #333;
-            padding: 20px;
-            margin: 0;
-        }
-
-        h1 {
-            text-align: center;
-            color: #d46a92;
-        }
-
-        .poem-list {
-            margin: 20px auto;
-            max-width: 600px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .poem-title {
-            padding: 15px;
-            font-size: 20px;
-            font-weight: bold;
-            background-color: #ff69b4;
-            color: white;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-        }
-
-        .poem-title:hover {
-            background-color: #ff1493; /* Changement de couleur au survol */
-        }
-    </style>
+    <title>Sommaire des Poèmes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Mes Poèmes</h1>
-    <div class="poem-list">
+    <div class="container">
+        <h1>Sommaire des Poèmes</h1>
+        <ul class="poem-list">
         <li><a href="poem1.html">Au pied d'une feuille</a></li>
         <li><a href="poem2.html">Aldébaran</a></li>
         <li><a href="poem3.html">Une esquisse pour une reine</a></li>
@@ -76,7 +40,8 @@
         <li><a href="poem28.html">Un poème pour Rania</a></li>
         <li><a href="poem29.html">L'impuissance du poète</a></li>
         <li><a href="poem30.html">WIP</a></li>
-        
+</ul>
+        <a href="index.html" class="btn">Retour à l'accueil</a>
     </div>
 </body>
 </html>
