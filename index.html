@@ -19,94 +19,63 @@
 
     <script>
         function showHeartPage() {
-            const newWindow = window.open("", "_blank");
+    const newWindow = window.open("", "_blank");
 
-            newWindow.document.write(`
-                <!DOCTYPE html>
-                <html lang="fr">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Mon amour</title>
-                    <style>
-                        /* Style général */
-                        body {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            height: 100vh;
-                            margin: 0;
-                            background-color: #fef6f9; /* Rose pâle */
-                            font-family: 'Georgia', serif;
-                            text-align: center;
-                            padding: 20px;
-                        }
+    newWindow.document.write(`
+        <!DOCTYPE html>
+        <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mon amour</title>
+            <style>
+                /* Style général */
+                body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                    background-color: #fef6f9; /* Rose pâle */
+                    font-family: 'Georgia', serif;
+                    text-align: center;
+                    padding: 20px;
+                }
 
-                        /* Style du cœur */
-                        .heart {
-                            position: relative;
-                            width: 80px; /* Taille réduite */
-                            height: 80px;
-                            background-color: #e63946 ;
-                            margin-bottom: 20px;
-                            transform: rotate(0); /* Cœur bien droit */
-                        }
+                /* Style du texte */
+                .poem {
+                    font-size: 15px; /* Taille légèrement réduite */
+                    color: #2c3e50; /* Bleu-gris élégant */
+                    line-height: 1.6; /* Espacement entre les lignes */
+                    max-width: 600px; /* Limite la largeur du texte */
+                    margin: 20px auto; /* Centre et ajoute un espace autour */
+                }
 
-                        .heart::before,
-                        .heart::after {
-                            content: "";
-                            position: absolute;
-                            width: 80px;
-                            height: 80px;
-                            background-color: #e63946;
-                            border-radius: 50%;
-                        }
+                /* Style du bouton */
+                .btn {
+                    display: inline-block;
+                    margin-top: 10px; /* Réduit l'espace avec le texte */
+                    padding: 10px 20px;
+                    font-size: 12px; /* Diminue la taille de la police */
+                    color: #fff;
+                    background-color: #ff69b4; /* Rose vif */
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: background-color 0.3s ease;
+                }
 
-                        .heart::before {
-                            top: -40px;
-                            left: 0;
-                        }
-
-                        .heart::after {
-                            top: 0;
-                            left: 40px;
-                        }
-
-                        /* Style du texte */
-                        .poem {
-                            font-size: 15px; /* Taille légèrement réduite */
-                            color: #2c3e50; /* Bleu-gris élégant */
-                            line-height: 1.6; /* Espacement entre les lignes */
-                            max-width: 600px; /* Limite la largeur du texte */
-                            margin: 20px auto; /* Centre et ajoute un espace autour */
-                        }
-
-                        /* Style du bouton */
-                        .btn {
-                            display: inline-block;
-                            margin-top: 20px;
-                            padding: 10px 20px;
-                            font-size: 14px;
-                            color: #fff;
-                            background-color: #ff69b4; /* Rose */
-                            border: none;
-                            border-radius: 5px;
-                            cursor: pointer;
-                            text-decoration: none;
-                            font-weight: bold;
-                            transition: background-color 0.3s ease;
-                        }
-
-                        .btn:hover {
-                            background-color: #b0003a; /* Foncé au survol */
-                        }
-                    </style>
-                </head>
-                <body>
-                    <div class="heart"></div>
-                    <div class="poem">
-            Après quelques semaines de travail et des dizaines d'heures passées à essayer de comprendre comment coder et lancer une page internet, je suis heureux de te présenter le fruit de mes efforts.<br>J'ai appris de zéro à coder un site internet afin de te faire plaisir et référencer tout les poèmes que je t'ai écrit et ceux que je t'écrirais. 
+                .btn:hover {
+                    background-color: #b0003a; /* Foncé au survol */
+                }
+            </style>
+        </head>
+        <body>
+            <div class="poem">
+                Après quelques semaines de travail et des dizaines d'heures passées à essayer de comprendre comment coder et lancer une page internet, je suis heureux de te présenter le fruit de mes efforts.<br>J'ai appris de zéro à coder un site internet afin de te faire plaisir et référencer tout les poèmes que je t'ai écrit et ceux que je t'écrirais. 
             Je parle au futur car notre histoire est loin d'être finie ni même réellement commencée. Elle a connu un petit arrêt afin qu'elle puisse mieux commencer.<br>Quand on sera mariés إِنْ شَاءَ ٱللَّٰهُ tu verras tout l'amour, les petites et grandes attentions que j'ai prévues pour toi. Toutes les recherches, les préparations de plans ou de vacances à deux que j'ai rêvées et organisées dans ma tête …<br> Bref, tu verras combien je t'ai portée dans mon cœur, dans mon âme et jusqu'à dans ma chair tout ces mois et toutes ces années. Et j'espère que tu te diras que ça valait le coup de m'avoir laissée la chance d'espérer t'avoir à mes côtés. <br>
             J'aimerais finir ce texte en te réitérant mon amour sans faille que je te porte, un amour si profond que je le vois manifesté partout dans la vie … 
             Chaque fleur qui pousse m'évoque les sentiments grandissants dans mon cœur. Les étoiles scintillantes constituent des phares pour les hommes dans la nuit, tout comme ton souvenir rappelle à mon âme que l'homme n'a pas été crée seul : 
@@ -115,12 +84,9 @@
             (Al A'raf, verset 189). <br>
             Je vois en toi une femme, une épouse et si Dieu le veut, la future mère de mes enfants. Mais je veux aussi rendre hommage à l'enfant que tu as été. J'aimerais la couvrir d'amour et lui témoigner de la considération. J'en prendrai soin, c'est une promesse, et je te ferais vivre dans une paix qui te siéra parfaitement je l'espère. <br>
             <strong>Je t'aime Rania <3 </strong> 
-                    </div>
-                    <a href="poems.html" class="btn">Voir mes poèmes dédiés à toi</a>
-                </body>
-                </html>
-            `);
-        }
-    </script>
-</body>
-</html>
+            </div>
+            <a href="poems.html" class="btn">Voir mes poèmes dédiés à toi</a>
+        </body>
+        </html>
+    `);
+}
