@@ -142,3 +142,21 @@ h1 {
     background-color: #b0003a; /* Foncé au survol */
 }
 
+.poem-list {
+    max-height: 300px; /* Ajuste cette valeur selon la hauteur souhaitée */
+    overflow-y: auto; /* Active le défilement vertical si le contenu dépasse */
+    border: 1px solid #ddd; /* Optionnel : pour visualiser les limites du conteneur */
+    padding: 10px; /* Optionnel : ajoute un peu d’espace intérieur */
+    background-color: #f9f9f9; /* Optionnel : fond agréable pour la lecture */
+}
+
+.poem-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.poem-list li {
+    margin-bottom: 10px; /* Ajoute de l’espace entre les éléments */
+}
+
