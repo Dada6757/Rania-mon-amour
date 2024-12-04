@@ -124,6 +124,28 @@ h1 {
     color: #b0003a; /* Rouge foncé */
 }
 
+.poem.long {
+    max-height: 300px; /* Limite la hauteur des poèmes longs */
+    overflow-y: auto; /* Permet le défilement vertical */
+    padding-right: 10px; /* Ajoute de l'espace pour le scroll */
+    scrollbar-width: thin; /* Réduit la taille de la barre (Firefox) */
+}
+
+/* Style pour améliorer l'apparence des barres de défilement (facultatif) */
+.poem.long::-webkit-scrollbar {
+    width: 8px; /* Largeur de la barre de défilement */
+}
+
+.poem.long::-webkit-scrollbar-thumb {
+    background-color: #ff69b4; /* Couleur de la barre */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.poem.long::-webkit-scrollbar-thumb:hover {
+    background-color: #b0003a; /* Couleur au survol */
+}
+
+
 /* Style du bouton */
 .btn {
     display: inline-block;
