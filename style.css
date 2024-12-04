@@ -10,11 +10,13 @@ body, html {
 }
 
 /* Style de l'enveloppe */
-.envelope {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
+.enveloppe {
+  background-color: #F5F5DC;
+  width: 200px;
+  height: 100px;
+  border: 1px solid #d3d3c0; /* Une bordure subtile */
+}
+
 }
 
 /* Volet de l'enveloppe */
