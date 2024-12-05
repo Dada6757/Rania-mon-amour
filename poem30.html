@@ -6,6 +6,31 @@
     <title>Poème 1</title>
     <link rel="stylesheet" href="style.css"> <!-- Lien vers ton fichier CSS global -->
     <style>
+        .poem-container {
+            max-height: 80vh; /* Définit la hauteur max de l'écran visible */
+            overflow-y: auto; /* Permet le défilement vertical */
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .poem-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .poem-container::-webkit-scrollbar-thumb {
+            background: #b0003a; /* Couleur de la barre */
+            border-radius: 10px;
+        }
+
+        .poem-container::-webkit-scrollbar-thumb:hover {
+            background: #ff69b4;
+        }
+
+        .poem-container::-webkit-scrollbar-track {
+            background: #f0f0f0;
+        }
         /* Styles spécifiques pour les pages de poèmes */
         body {
             background-color: #f5f5f5; /* Fond clair agréable */
@@ -48,6 +73,7 @@
     </style>
 </head>
 <body>
+    <div class="poem-container">
     <h1>Échos de ton absence</h1> <!-- Titre du poème -->
     <p> Ô douce Rania, étoile de mes nuits, <br>
 Ton nom murmure au vent des mélodies infinies. <br>
@@ -74,7 +100,35 @@ Comme le lac attend le reflet d’une fleur. <br>
 Et si l’éternité doit nous séparer encore, <br>
 Sache que ton absence est mon plus doux trésor.
     </p>
+    </div>
     <a href="poems.html" class="btn">Retour au sommaire</a> <!-- Bouton de retour -->
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
