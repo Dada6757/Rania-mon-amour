@@ -3,6 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettre d'amour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="envelope">
+        <div class="cover"></div> <!-- Partie de l'enveloppe qui va se lever -->
+        <div class="letter">
+            <h1>À toi, mon amour</h1>
+            <p>Mon cœur, cette lettre est pour toi...</p>
+            <button class="btn" id="openThis" onclick="showHeartPage()">Ouvre cela</button>
+        </div>
+    </div>
+
+    <script>
+        function showHeartPage() {
+    const newWindow = window.open("", "_blank");
+
+    newWindow.document.write(`
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon amour</title>
     <link rel="stylesheet" href="style.css"> <!-- Si style.css contient déjà les styles communs -->
     <style>
