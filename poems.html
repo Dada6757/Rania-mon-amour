@@ -6,7 +6,7 @@
     <title>Sommaire des Poèmes</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .poem-container {
+        .poem-list-container {
             max-height: 700px; /* Limite la hauteur visible */
             overflow-y: scroll; /* Active le défilement vertical */
             padding: 10px;
@@ -16,20 +16,20 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .poem-container::-webkit-scrollbar {
+        .poem-list-container::-webkit-scrollbar {
             width: 8px;
         }
 
-        .poem-container::-webkit-scrollbar-thumb {
+        .poem-list-container::-webkit-scrollbar-thumb {
             background: #b0003a; /* Couleur de la barre */
             border-radius: 10px;
         }
 
-        .poem-container::-webkit-scrollbar-thumb:hover {
+        .poem-list-container::-webkit-scrollbar-thumb:hover {
             background: #ff69b4;
         }
 
-        .poem-container::-webkit-scrollbar-track {
+        .poem-list-container::-webkit-scrollbar-track {
             background: #f0f0f0;
         }
     </style>
@@ -38,7 +38,7 @@
     <div class="poem-list">
         <h1>Sommaire des Poèmes</h1>
         <!-- Ajout du conteneur scrollable -->
-        <div class="poem-container">
+        <div class="poem-list-container">
             <ul class="poem-list">
                 <li><a href="poem1.html">Au pied d'une feuille</a></li>
                 <li><a href="poem2.html">Aldébaran</a></li>
